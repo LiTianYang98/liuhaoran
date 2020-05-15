@@ -28,13 +28,13 @@ export default {
               tooltip: {},
               xAxis: {
                 name: '招生单位',
-                data: res.data[2].招生单位
+                data: ['华北电力大学(保定)']
               },
               yAxis: {},
               series: [{
                 name: '招生人数',
                 type: 'bar',
-                data: res.data[2].招生人数
+                data: ['31']
               }]
             });
           })
