@@ -18,6 +18,10 @@
                             <Icon type="ios-flower"></Icon>
                             <span>表格</span>
                         </MenuItem>
+                        <MenuItem name="Li-2" to="/li-2" @click.native='go("图形" ,"Li-2")'>
+                            <Icon type="ios-flower"></Icon>
+                            <span>图形</span>
+                        </MenuItem>
                     </Submenu>
                 </Menu>
             </Sider>
