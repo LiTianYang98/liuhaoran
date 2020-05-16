@@ -9,6 +9,9 @@ import 'iview/dist/styles/iview.css'  // 外部插件样式
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

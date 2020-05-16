@@ -1,5 +1,5 @@
 <template>
-    <div id="myChart" :style="{width: '1200px', height: '700px'}"></div>
+    <div id="myChart" :style="{width: '1200px', height: '500px'}"></div>
 </template>
 
 <script>
@@ -21,20 +21,30 @@ export default {
 
         this.$http.get("/api/select")//
           .then(function(res){
-            //var xdata = Object.values(res.data);
-            //var ydata = Object.keys(res.data);
+	    var i = "";
+	    var xlist = new Array();
+	    var ylist = new Array();
+	    for(i in res.data){
+		xlist[i]=res.data[i].招生单位;
+		ylist[i]=res.data[i].招生人数;
+	    }
+	    console.log(xlist);
             // 绘制图表
             myChart.setOption({
               tooltip: {},
               xAxis: {
                 name: '招生单位',
-                data: ['华北电力大学(保定)']
+                data: xlist,
+		axisLabel: {  
+		   interval:0,  
+		   rotate:40  
+		}
               },
               yAxis: {},
               series: [{
                 name: '招生人数',
                 type: 'bar',
-                data: ['31']
+                data: ylist
               }]
             });
           })
