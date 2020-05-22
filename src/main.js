@@ -5,7 +5,12 @@ import App from './App'
 import router from './router'
 import store from './store'
 import '../static/style.css'  // 外部static样式
-import 'iview/dist/styles/iview.css'  // 外部插件样式
+
+//import iView from 'iview'
+import 'iview/dist/styles/iview.css'
+ 
+//Vue.use(iView)
+
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 

@@ -20,7 +20,7 @@ export default {
   name: 'Li-1',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App', 
+      msg: '考研数据查询系统', 
       columns7: [
           {
               title: '招生单位',

@@ -22,6 +22,10 @@
                             <Icon type="ios-flower"></Icon>
                             <span>图形</span>
                         </MenuItem>
+                        <MenuItem name="Li-3" to="/li-3" @click.native='go("查找" ,"Li-3")'>
+                            <Icon type="ios-flower"></Icon>
+                            <span>查找</span>
+                        </MenuItem>
                     </Submenu>
                 </Menu>
             </Sider>

@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
             console.log(err);
         }
         if (result) {
-            //console.log(result);
+            console.log(result);
             res.json(result);
             conn.release();
         }

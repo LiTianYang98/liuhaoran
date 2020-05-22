@@ -2,6 +2,7 @@
 
 const cakeList = require('./api/cakeList');
 const select = require('./api/select');
+const pyth = require('./api/pyth');
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
@@ -10,6 +11,7 @@ const app = express();
 
 // 后端api路由
 app.use('/api/cakeList', cakeList);
+app.use('/api/pyth', pyth);
 app.use('/api/select', select);
 // 监听端口
 app.listen(3000);
