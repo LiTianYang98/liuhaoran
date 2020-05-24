@@ -6,12 +6,12 @@ var exec = require('child_process').exec;
 
 
 function execCmd(province,major) {
-    exec('python3.7 -m yzwspider -ssdm '+province+' -yjxk '+major+' mysql -p123456 -db yanzhao -table tab', function (error, stdout, stderr) {
+    exec('\\python3.7 -m yzwspider -ssdm '+province+' -yjxk '+major+' mysql -p123456 -db yanzhao -table tab', function (error, stdout, stderr) {
 		if(error) {
         //console.log('get weather api error:'+stderr);
     } else {
 	//var data = JSON.parse(stdout);
-        //console.log(data);
+        //console.log();
     }
     });
 }
