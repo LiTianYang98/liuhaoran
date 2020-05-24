@@ -12,7 +12,7 @@ var pool = mysql.createPool(models.mysql);
 router.get('/', (req, res) => {
     pool.getConnection((err,conn)=>{
         if(err) throw err;
-    var sql ="select * from hebei";
+    var sql ="select * from tab";
     conn.query(sql, (err, result)=>{
         if (err) {
             console.log(err);

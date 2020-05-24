@@ -4,19 +4,15 @@ var router = express.Router();
 var exec = require('child_process').exec;
 
 
-var cmds = ['100', '200', '300'];
-var no = 0;
 
 function execCmd(province,major) {
-    exec('python -m yzwspider -ssdm '+province+' -yjxk '+major+' mysql -p123456 -db yanzhao -table tab', function (error, stdout, stderr) {
-        if(error){
-            console.error('error: ' + error);
-            return;
-        }
-        console.log('receive: ' + stdout.split("#")[0] + ": " + stdout.split("#")[1]);
-
-        var json = JSON.parse(stdout.split("#")[1]);
-        console.log(json.msg);
+    exec('python3.7 -m yzwspider -ssdm '+province+' -yjxk '+major+' mysql -p123456 -db yanzhao -table tab', function (error, stdout, stderr) {
+		if(error) {
+        //console.log('get weather api error:'+stderr);
+    } else {
+	//var data = JSON.parse(stdout);
+        //console.log(data);
+    }
     });
 }
 

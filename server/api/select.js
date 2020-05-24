@@ -12,7 +12,7 @@ var pool = mysql.createPool(models.mysql);
 router.get('/', (req, res) => {
     pool.getConnection((err,conn)=>{
         if(err) throw err;
-    var sql ="select 招生单位,avg(拟招生人数) as 招生人数 from hebei group by 招生单位";
+    var sql ="select 招生单位,avg(拟招生人数) as 招生人数 from tab group by 招生单位";
     conn.query(sql, (err, result)=>{
         if (err) {
             console.log(err);
