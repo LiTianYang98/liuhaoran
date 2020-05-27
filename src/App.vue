@@ -13,7 +13,10 @@
                             <Icon type="ios-navigate"></Icon>
                             <span>数据</span>
                         </template>
-                        <!--这个to属性不生效，升级3.0也不行，好烦哦-->
+			<MenuItem name="Li-3" to="/li-3" @click.native='go("查找" ,"Li-3")'>
+                            <Icon type="ios-flower"></Icon>
+                            <span>查找</span>
+                        </MenuItem>
                         <MenuItem name="Li-1" to="/li-1" @click.native='go("表格" ,"Li-1")'>
                             <Icon type="ios-flower"></Icon>
                             <span>表格</span>
@@ -21,10 +24,6 @@
                         <MenuItem name="Li-2" to="/li-2" @click.native='go("图形" ,"Li-2")'>
                             <Icon type="ios-flower"></Icon>
                             <span>图形</span>
-                        </MenuItem>
-                        <MenuItem name="Li-3" to="/li-3" @click.native='go("查找" ,"Li-3")'>
-                            <Icon type="ios-flower"></Icon>
-                            <span>查找</span>
                         </MenuItem>
                     </Submenu>
                 </Menu>
