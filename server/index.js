@@ -2,6 +2,7 @@
 
 const cakeList = require('./api/cakeList');
 const select = require('./api/select');
+const select211 = require('./api/select211');
 const selectpi = require('./api/selectpi');
 const pyth = require('./api/pyth');
 const fs = require('fs');
@@ -15,6 +16,7 @@ app.use('/api/cakeList', cakeList);
 app.use('/api/pyth', pyth);
 app.use('/api/select', select);
 app.use('/api/selectpi', selectpi);
+app.use('/api/select211', select211);
 // 监听端口
 app.listen(3000);
 console.log('success listen at port:3000......');

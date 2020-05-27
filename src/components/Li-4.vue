@@ -88,9 +88,9 @@ export default {
                   length2: 20
                 },
                 itemStyle: {
-                  color: "#c23531",
+                  color: "#00CD",
                   shadowBlur: 200,
-                  shadowColor: "rgba(0, 0, 0, 0.5)"
+                  shadowColor: "rgba(0, 0, 0, 2)"
                 },
 
                 animationType: "scale",
