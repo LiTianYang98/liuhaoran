@@ -71,6 +71,7 @@ export default {
         },
         {
           title: "拟招生人数",
+          sortable: true,
           key: "拟招生人数"
         },
         {

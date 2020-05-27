@@ -21,9 +21,13 @@
                             <Icon type="ios-flower"></Icon>
                             <span>表格</span>
                         </MenuItem>
-                        <MenuItem name="Li-2" to="/li-2" @click.native='go("图形" ,"Li-2")'>
+                        <MenuItem name="Li-2" to="/li-2" @click.native='go("图形1" ,"Li-2")'>
                             <Icon type="ios-flower"></Icon>
-                            <span>图形</span>
+                            <span>图形1</span>
+                        </MenuItem>
+                        <MenuItem name="Li-4" to="/li-4" @click.native='go("图形2" ,"Li-4")'>
+                            <Icon type="ios-flower"></Icon>
+                            <span>图形2</span>
                         </MenuItem>
                     </Submenu>
                 </Menu>
