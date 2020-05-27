@@ -45,7 +45,7 @@ export default {
             backgroundColor: "#2c343c",
 
             title: {
-              text: "人数表",
+              text: "大学招生人数表",
               left: "center",
               top: 20,
               textStyle: {
@@ -68,7 +68,7 @@ export default {
             },
             series: [
               {
-                name: "人数",
+                name: "大学",
                 type: "pie",
                 radius: "55%",
                 center: ["50%", "50%"],
