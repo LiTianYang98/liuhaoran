@@ -6,32 +6,32 @@
             <Sider ref="side1" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed">
                 <Menu ref="side_menu" :active-name="activeName" theme="dark" width="auto" :class="menuitemClasses" @on-select='letsGo' @on-open-change='setOpen' accordion>
                     <div class='logo flex alic'>
-                        <span class='fz18 ml10 flex1'>管理系统</span>
+                        <span class='fz18 ml10 flex1'>考研数据爬取及可视化分析系统</span>
                     </div>
-                    <Submenu name="数据">
+                    <Submenu name="目录">
                         <template slot="title">
                             <Icon type="ios-navigate"></Icon>
-                            <span>数据</span>
+                            <span>功能</span>
                         </template>
-			<MenuItem name="Li-3" to="/li-3" @click.native='go("查找" ,"Li-3")'>
+			<MenuItem name="Li-3" to="/li-3" @click.native='go("点击爬取" ,"Li-3")'>
                             <Icon type="ios-flower"></Icon>
-                            <span>查找</span>
+                            <span>爬虫</span>
                         </MenuItem>
                         <MenuItem name="Li-1" to="/li-1" @click.native='go("表格" ,"Li-1")'>
                             <Icon type="ios-flower"></Icon>
                             <span>表格</span>
                         </MenuItem>
-                        <MenuItem name="Li-2" to="/li-2" @click.native='go("图形1" ,"Li-2")'>
+                        <MenuItem name="Li-2" to="/li-2" @click.native='go("招生院校-拟招人数图" ,"Li-2")'>
                             <Icon type="ios-flower"></Icon>
-                            <span>图形1</span>
+                            <span>柱形图</span>
                         </MenuItem>
-                        <MenuItem name="Li-4" to="/li-4" @click.native='go("图形2" ,"Li-4")'>
+                        <MenuItem name="Li-4" to="/li-4" @click.native='go("扇形图" ,"Li-4")'>
                             <Icon type="ios-flower"></Icon>
-                            <span>图形2</span>
+                            <span>扇形图</span>
                         </MenuItem>
-                        <MenuItem name="Li-211" to="/li-211" @click.native='go("图形3" ,"Li-211")'>
+                        <MenuItem name="Li-211" to="/li-211" @click.native='go("211/985/双非拟招人数" ,"Li-211")'>
                             <Icon type="ios-flower"></Icon>
-                            <span>图形3</span>
+                            <span>211/985招生人数</span>
                         </MenuItem>
                     </Submenu>
                 </Menu>

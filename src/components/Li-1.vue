@@ -13,7 +13,7 @@
       type="primary"
       @click="exportData"
       style="float:right;margin-bottom:10px"
-      >导出</Button
+      >导出Excel表</Button
     >
   </div>
 </template>
@@ -43,7 +43,7 @@ export default {
   name: "Li-1",
   data() {
     return {
-      msg: "考研数据查询系统",
+      msg: "考研数据爬取与可视化系统",
       columns7: [
         {
           title: "招生单位",
@@ -93,6 +93,10 @@ export default {
         {
           title: "所在地",
           key: "所在地"
+        },
+        {
+          title: "备注",
+          key: "备注"
         }
       ]
     };
@@ -116,7 +120,7 @@ export default {
     },
     exportData() {
       this.$refs.myTable.exportCsv({
-        filename: "统计表",
+        filename: "研究生招生信息表",
         original: false,
         columns: this.columns7
       });
